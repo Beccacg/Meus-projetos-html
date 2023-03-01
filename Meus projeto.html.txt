@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta>
+	<title> 
+		Pensando na Web
+	</title>
+	</head>
+		<body>
+			<h1>
+				Aprendendo HTML
+			</h1>
+			<p>
+				O html é uma linguagem de marcacão utilizada para construir paginas web. Ela foi criada por Tim Berners-Lee...
+			</p>
+		</body>
+</html>
