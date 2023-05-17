@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout com CSS Grid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto 1fr auto;
+      min-height: 100vh;
+      grid-gap: 20px;
+      padding: 20px;
+    }
+    
+    header {
+      grid-row: 1;
+      text-align: center;
+    }
+    
+    nav {
+      grid-row: 2;
+      text-align: center;
+    }
+    
+    main {
+      grid-row: 3;
+    }
+    
+    .box {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    footer {
+      grid-row: 4;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Logo</h1>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <div class="box">
+        <h2>Header/Banner</h2>
+      </div>
+      
+      <div class="box">
+        <h2>Intro Text Area</h2>
+      </div>
+      
+      <div class="box">
+        <h2>Box 1</h2>
+      </div>
+      
+      <div class="box">
+        <h2>Box 2</h2>
+      </div>
+      
+      <div class="box">
+        <h2>Box 3</h2>
+      </div>
+    </main>
+    
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
