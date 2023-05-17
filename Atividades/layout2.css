@@ -4,67 +4,28 @@ html, body {
     height: 100%;
   }
 
-  .container-flex {
-    width: 80%;
-    margin-top: 30px;
-    margin-left: 11%;
-    margin-right: 9%;
-    margin-bottom: 30px;
+.container-flex{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .logo1{
-        text-indent: 5%;
-        width: 60%;
-        height: 80px;
-        background-color: rgb(141, 132, 132);
-  }
-
-  .logo2{
-        text-indent: 5%;
-        width: 40%;
-        height: 80px;
-        background-color:rgb(141, 132, 132);
-  }
-
-  .header {
-    margin-top: 15px;
-    width: 100px;
-    height: 120px;
-    background-color:rgb(141, 132, 132);
-    text-align: center;
-  }
-  
-  .intro{
-    margin-top: 15px;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(141, 132, 132);
-    text-align: center;
+    background-color:rgb(170, 131, 131)
 }
 
-.box{
-    margin-top: 15px;
-    height: 350px;
-    width: 30%;
-    background-color: rgb(141, 132, 132);
+.flex-container > div {
+    background-color:bisque;
+    width:100px;
+    margin:10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-
 }
 
-.foot{
-    margin-top: 15px;
-    margin-bottom: 30px;
-    height: 50px;
-    width: 100%;
-    background-color: rgb(141, 132, 132);
+.box {
+    background-color: rgb(170, 131, 131);
+    width: 100px;
+    margin: 10px;
     text-align: center;
-    
-
+    line-height: 75px;
+    font-size: 30px;
 }
  
   
