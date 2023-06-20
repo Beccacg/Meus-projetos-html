@@ -1,0 +1,36 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.logo{ grid-area: logo }
+.nav{ grid-area: nav }
+.header{ grid-area: header }
+.side{ grid-area: side }
+.body{ grid-area: body }
+.foot{ grid-area: footer }
+
+
+.container-grid{
+    display: grid;
+    grid-template-areas: 
+        'logo   logo    logo    logo    logo    logo'
+        'nav    nav     nav     nav     nav     nav '
+        'header header  header  header  header  header'
+        'header header  header  header  header  header'
+        'side   body    body    body    body    body'
+        'side   body    body    body    body    body'
+        'footer footer  footer  footer  footer  footer';
+    grid-gap: 2em;
+    background-color: #bebdbe;
+    padding: 0.8em;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.int{
+    background-color:rgb(122, 122, 115);
+    text-align: center;
+    padding: 0.5em;
+}
