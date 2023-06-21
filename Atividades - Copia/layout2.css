@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+.container-flex{
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(170, 131, 131)
+}
+
+.flex-container > div {
+    background-color:bisque;
+    width:100px;
+    margin:10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.box {
+    background-color: rgb(170, 131, 131);
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+ 
+  
+  
