@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 3 Javascript</title>
+</head>
+<body>
+    <fieldset>
+        <h1 id="titulo">Manipulando elementos html (DOM) com Javascript.</h1>
+        <p id="result"></p>
+        <label for="num1">Valor 1:</label>
+        <input type="number" id="num1" step="0.1" min="0" onmouseover="verNum()"><br>
+        <label for="num2">Valor 2:</label>
+        <input type="number" id="num2" step="0.1" min="0"><br>
+        <input type="button" id="botao" value="OK">
+    </fieldset>
+<br><br>
+    <fieldset>
+        <legend>Multiplos de 4</legend>
+        <label for="vlr1">Inicio:</label>
+        <input id="vlr1" type="number" step="1" min="0"><br>
+        <label for="vlr2">Fim:</label>
+        <input id="vlr2" type="number" step="1" min="0">
+        <span id="verif"></span><br>
+        <button id="btGerar">Gerar</button>
+    </fieldset>
+    <script>
+        let titulo = document.getElementById('titulo');
+        //alert(titulo.innerHTML);
+        titulo.style = 'border: 1px dotted brown; font-size: 30pt;';
+        titulo.style.backgroundColor = '#ae57fa';
+
+        let txtNum1 = document.querySelector('#num1');
+        let txtNum2 = document.querySelector('#num2');
+        let botao = document.getElementById("botao");
+
+        document.querySelector('#num1');
+        //txtNum1.value = 4.2;
+
+        function verNum(){
+            result.innerHTML = "Informe um valor maior que 0!";
+
+        }
+
+        txtNum1.onmouseout = function(){
+            result.innerHTML = "";
+        };
+
+        botao.onclick = function(){
+            if(txtNum1.value > txtNum2.value){
+                result.innerHTML = 'O maior valor é o primeiro';
+            }else if(txtNum2.value > txtNum1.value){
+                result.innerHTML = 'O maior valor é o segundo';
+            }else{
+                result.innerHTML = 'Os valores são iguais';
+            }
+        };
+
+    </script>
+</body>
+</html>
